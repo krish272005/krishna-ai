@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 fastapi
 uvicorn
-
-=======
-fastapi
-uvicorn
-
->>>>>>> 04fbea199fd6b48fa5055292496120a35ec65354
+pydantic
