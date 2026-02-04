@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Krishna AI</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(#0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    textarea {
+      width: 80%;
+      height: 80px;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .reply {
+      margin-top: 20px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🦚 Krishna AI</h1>
+  <p>“Arjuna, ask what troubles your mind…”</p>
+
+  <textarea id="question"></textarea><br>
+  <button onclick="ask()">Ask Krishna</button>
+
+  <div class="reply" id="reply"></div>
+
+  <script>
+    async function ask() {
+      const msg = document.getElementById("question").value;
+
+      const res = await fetch("https://krishna-ai-backend.onrender.com/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: msg })
+      });
+
+      const data = await res.json();
+      document.getElementById("reply").innerText = data.reply;
+    }
+  </script>
+</body>
+</html>
