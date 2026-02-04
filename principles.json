@@ -1,3 +1,22 @@
+
+[
+  {
+    "id": "P01",
+    "principle": "Phal ki aasakti hi bhay ko janm deti hai",
+    "use_when": ["dar", "chinta", "asafalta"]
+  },
+  {
+    "id": "P02",
+    "principle": "Karm ke bina spashtata nahi aati",
+    "use_when": ["bhram", "confusion", "lost"]
+  },
+  {
+    "id": "P03",
+    "principle": "Man sthir ho to buddhi spasht hoti hai",
+    "use_when": ["chinta", "overthinking"]
+  }
+]
+=======
 [
   {
     "id": "P01",
