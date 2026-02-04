@@ -68,7 +68,6 @@ def chat(q: Question):
                 "Ab jao, aur apne kartavya par dridh raho."
             )
         }
-=======
 from fastapi import FastAPI
 from pydantic import BaseModel
 import json
